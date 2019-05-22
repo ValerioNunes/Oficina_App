@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "585574604840",
+    "firebase_url": "https://appoftest-957c1.firebaseio.com",
+    "project_id": "appoftest-957c1",
+    "storage_bucket": "appoftest-957c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585574604840:android:3b9f1857cfcfedd2",
+        "android_client_info": {
+          "package_name": "com.vale.oficina_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585574604840-hq928dji06l2t5mdgupa1kgugal9v115.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqDi135Mvbp-cfThjiRhNUtVdLHKaN0t0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585574604840-hq928dji06l2t5mdgupa1kgugal9v115.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585574604840:android:168de3784b9b1022",
+        "android_client_info": {
+          "package_name": "io.eletroauto.appOFTest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "585574604840-hq928dji06l2t5mdgupa1kgugal9v115.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqDi135Mvbp-cfThjiRhNUtVdLHKaN0t0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "585574604840-hq928dji06l2t5mdgupa1kgugal9v115.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
