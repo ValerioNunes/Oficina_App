@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:oficina_app/pages/home_page.dart';
-
+import 'package:oficina_app/pages/cad_paciente.dart';
 void main() {
   runApp(new MyApp());
 }
@@ -14,6 +14,6 @@ class MyApp extends StatelessWidget {
         theme: new ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: new HomePage( userId: "01547492"));
+        home: new CadPaciente( userId: "01547492"));
   }
 }

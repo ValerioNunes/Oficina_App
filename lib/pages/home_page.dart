@@ -37,15 +37,17 @@ class _HomePageState extends State<HomePage> {
         .orderByChild("userId")
         .equalTo(widget.userId);
     _onTodoAddedSubscription = _todoQuery.onChildAdded.listen(_onEntryAdded);
-    _onTodoChangedSubscription = _todoQuery.onChildChanged.listen(_onEntryChanged);
-    _onModelDeleteSubscription = _todoQuery.onChildRemoved.listen(_onModelRemove);
+    _onTodoChangedSubscription =
+        _todoQuery.onChildChanged.listen(_onEntryChanged);
+    _onModelDeleteSubscription =
+        _todoQuery.onChildRemoved.listen(_onModelRemove);
   }
 
   @override
   void dispose() {
     _onTodoAddedSubscription.cancel();
     _onTodoChangedSubscription.cancel();
-    if(_onModelDeleteSubscription != null)
+    if (_onModelDeleteSubscription != null)
       _onModelDeleteSubscription.cancel();
     super.dispose();
   }
@@ -65,7 +67,8 @@ class _HomePageState extends State<HomePage> {
     });
 
     setState(() {
-      _todoList[_todoList.indexOf(oldEntry)] = Todo.fromSnapshot(event.snapshot);
+      _todoList[_todoList.indexOf(oldEntry)] =
+          Todo.fromSnapshot(event.snapshot);
     });
   }
 
@@ -77,13 +80,12 @@ class _HomePageState extends State<HomePage> {
 
   _addNewTodo(String todoItem) {
     if (todoItem.length > 0) {
-
       Todo todo = new Todo(todoItem.toString(), widget.userId, false);
       _database.reference().child("todo").push().set(todo.toJson());
     }
   }
 
-  _updateTodo(Todo todo){
+  _updateTodo(Todo todo) {
     //Toggle completed
     todo.completed = !todo.completed;
     if (todo != null) {
@@ -180,7 +182,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        appBar: new AppBar( title: new Text('Oficina_APP')),
+        appBar: new AppBar(title: new Text('Oficina_APP')),
         body: _showTodoList(),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
